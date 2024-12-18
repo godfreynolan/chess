@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#board {
+  margin: 0 auto;
+  width: 400px;  /* Ensure the board has a defined width */
+  height: 400px; /* Ensure height matches width for square board */
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#status {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 18px;
+  min-height: 30px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+label {
+  font-size: 16px;
+}
+
+input {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
