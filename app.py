@@ -1,11 +1,12 @@
 from flask import Flask, request, jsonify, render_template
 import chess
 import openai
-import config
+import os
 
 app = Flask(__name__)
 
-openai.api_key = config.OPENAI_API_KEY
+openai_api_key = os.getenv("OPENAI_API_KEY")
+
 
 @app.route('/')
 def index():
@@ -102,4 +103,4 @@ def process_move(is_retry):
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000)
